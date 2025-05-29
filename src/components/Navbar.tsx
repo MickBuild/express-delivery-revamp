@@ -11,7 +11,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-black">DedraVo Express</h1>
+            <img 
+              src="/lovable-uploads/4e51c54e-06bb-47de-b866-5d0c11c2c1a5.png" 
+              alt="DedraVo Express" 
+              className="h-12 w-auto"
+            />
           </div>
           
           <div className="hidden md:block">
@@ -19,7 +23,7 @@ const Navbar = () => {
               <a href="#services" className="text-black hover:text-gray-600 transition-colors">Services</a>
               <a href="#about" className="text-black hover:text-gray-600 transition-colors">À propos</a>
               <a href="#contact" className="text-black hover:text-gray-600 transition-colors">Contact</a>
-              <Button className="bg-black hover:bg-gray-800 text-white">
+              <Button style={{ backgroundColor: '#FFF446' }} className="hover:bg-yellow-400 text-black">
                 Demander un devis
               </Button>
             </div>
@@ -42,7 +46,7 @@ const Navbar = () => {
               <a href="#about" className="block px-3 py-2 text-black hover:text-gray-600">À propos</a>
               <a href="#contact" className="block px-3 py-2 text-black hover:text-gray-600">Contact</a>
               <div className="px-3 py-2">
-                <Button className="w-full bg-black hover:bg-gray-800 text-white">
+                <Button style={{ backgroundColor: '#FFF446' }} className="w-full hover:bg-yellow-400 text-black">
                   Demander un devis
                 </Button>
               </div>
