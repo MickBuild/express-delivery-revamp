@@ -7,19 +7,19 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-blue-600">DedraVo Express</h1>
+            <h1 className="text-2xl font-bold text-black">DedraVo Express</h1>
           </div>
           
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors">Services</a>
-              <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">À propos</a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
-              <Button className="bg-blue-600 hover:bg-blue-700">
+              <a href="#services" className="text-black hover:text-gray-600 transition-colors">Services</a>
+              <a href="#about" className="text-black hover:text-gray-600 transition-colors">À propos</a>
+              <a href="#contact" className="text-black hover:text-gray-600 transition-colors">Contact</a>
+              <Button className="bg-black hover:bg-gray-800 text-white">
                 Demander un devis
               </Button>
             </div>
@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-blue-600"
+              className="text-black hover:text-gray-600"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -38,11 +38,11 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-              <a href="#services" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Services</a>
-              <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-blue-600">À propos</a>
-              <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Contact</a>
+              <a href="#services" className="block px-3 py-2 text-black hover:text-gray-600">Services</a>
+              <a href="#about" className="block px-3 py-2 text-black hover:text-gray-600">À propos</a>
+              <a href="#contact" className="block px-3 py-2 text-black hover:text-gray-600">Contact</a>
               <div className="px-3 py-2">
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button className="w-full bg-black hover:bg-gray-800 text-white">
                   Demander un devis
                 </Button>
               </div>
